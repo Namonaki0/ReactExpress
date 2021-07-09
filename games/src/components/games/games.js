@@ -24,7 +24,8 @@ class Games extends Component {
         <ul>
           {this.state.games.map((game) => (
             <li key={game.id}>
-              {game.name} is property of {game.company}
+              <span>Name:</span> {game.name} || <span>Company:</span>{" "}
+              {game.company}
             </li>
           ))}
         </ul>
